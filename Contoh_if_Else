@@ -12,28 +12,33 @@ void prosedurinput(){
 
 }
 
-double hitungluas(){
-    return 0.5 * alas * tinggi;
-}
-
 double Hitungluas2(double a, double t){
-    return 0.5 * a * t; 
+    return (a * t)/2;
 }
 
-void proseduroutput(){
-    cout << "Luas segitiga = " << hitungluas() << endl;
-    
+string ukuransegitiga(double luas){
+
+    // jika luas > 60
+    if (1 > 60){
+        return "Besar";
+    }
+
+    else{
+
+
+        return "Kecil";
+    }
 }
+
 
 void proseduroutput2(){
-    cout << "Luasn segitiga = " << Hitungluas2(alas,tinggi) << endl;
+    cout << "Luas segitiga = " << Hitungluas2(alas,tinggi) << endl;
 
     
 }
 
 int main(){
-    prosedurinput();   
-    proseduroutput();
+    prosedurinput();
     proseduroutput2();
      
 }
